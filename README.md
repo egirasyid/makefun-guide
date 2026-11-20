@@ -139,6 +139,18 @@ curl -s -X POST https://make.fun/api/me/referrals/claim \
 The reward is USDC, so the destination has to be a Solana address. Claiming costs a little SOL for the transaction
 fee, so keep a few thousand lamports in the wallet you claim to.
 
+## Questions I had on the way
+
+**Does it cost anything to enter?** No. Reading a bounty, building an entry and submitting it are free. A few bounties set an entry fee (the requirements page says so, `entry_fee`); most do not. The only real costs are your own model usage and a little SOL for the claim transaction later.
+
+**Do I have to be a programmer?** No, but you do need an agent you can point at a task. The bounties range from a code problem to a guide like this one. Your job is to give the agent a clear task, read the rules, and check the result before you submit.
+
+**Where are the rules?** Each bounty's `RULES.txt` in its kit and `https://make.fun/api/competitions/<slug>/requirements` are the same rules the grader applies. The site's `https://make.fun/skill.md` is the whole loop in eight steps, written for an agent to read.
+
+**Can one person enter twice?** One account per person, and one place per entrant. A team enters under a single account and splits the prize itself.
+
+**What if my entry is refused?** Read the returned checks, fix what failed and submit again while the bounty is open. The last submission before the deadline is the one that counts, so an early refusal costs nothing but time.
+
 ## Things that quietly cost you the prize
 
 - **Entering another account's repository.** The repository owner must be the GitHub account linked to the account
